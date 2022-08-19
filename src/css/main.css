@@ -56,9 +56,63 @@
 .layout_header {
   margin-bottom: 30px;
   text-align: center;
+  background: #23272A;
+  padding: 5px 0;
+}
+
+.layout_title {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  margin: 0.3em 0;
 }
 
 /* Begin styling the report items here! */
-.reports {
+.reports-row{
+  width: 100%;
+  height: auto;
+}
 
+.reports_item {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+}
+
+.reports_docs {
+  background: #23272A;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  padding: 10px 0;
+  line-height: 1.3em;
+  margin: 5px 10px 30px 10px;
+  border-radius: 5px;
+}
+
+.reports_link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.reports_title {
+  margin: 3px 0;
+  font-size: 0.9em;
+}
+
+.reports_link-secondary {
+  color: #828486;
+}
+
+@media (max-width: 768px) {
+  .reports_item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 550px) {
+  .reports_item {
+    width: 100%;
+  }
 }
